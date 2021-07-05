@@ -6,7 +6,7 @@ namespace Chess.ClassLibrary
 {
     public class PRook : Piece
     {
-        private string myVar = "RO";
+        private string myVar = ChessConstant.PROOK;
         public new string Label
         {
             get { return myVar; }

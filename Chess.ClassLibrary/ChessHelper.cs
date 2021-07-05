@@ -2,7 +2,6 @@
 {
     public class ChessHelper
     {
-        const int Size = 8;
         /// <summary>
         /// Helper function to reassign the letter col label into our system File number for ease. 
         /// </summary>
@@ -36,6 +35,11 @@
             return i;
         }
 
+        /// <summary>
+        /// Helper function to return corresponding cell file label
+        /// </summary>
+        /// <param name="fileNumber"></param>
+        /// <returns></returns>
         public static string ChessFileLabel(int fileNumber)
         {
             switch (fileNumber)
@@ -61,18 +65,13 @@
             }
         }
 
-        //public enum ChessFileLabel
-        //{
-        //    a,b,c,d,e,f,g,h
-        //}
-
         /// <summary>
         /// Rook moves, also a part of Queen moves
         /// </summary>
         /// <param name="currentCell"></param>
         public static void StraightLineMoves(Cell currentCell, Cell[,] ChessBoardCell)
         {
-            for (int r = 1; r < Size; r++)
+            for (int r = 1; r < ChessConstant.SIZE; r++)
             {
                 if (IsWithinBoardRange(currentCell.RankNumber + r, currentCell.FileNumber))
                     ChessBoardCell[currentCell.RankNumber + r, currentCell.FileNumber].IsLegalMove = true;
@@ -81,7 +80,7 @@
                     ChessBoardCell[currentCell.RankNumber - r, currentCell.FileNumber].IsLegalMove = true;
             }
 
-            for (int f = 1; f < Size; f++)
+            for (int f = 1; f < ChessConstant.SIZE; f++)
             {
                 if (IsWithinBoardRange(currentCell.RankNumber, currentCell.FileNumber + f))
                     ChessBoardCell[currentCell.RankNumber, currentCell.FileNumber + f].IsLegalMove = true;
@@ -168,8 +167,8 @@
         /// <returns></returns>
         public static bool IsWithinBoardRange(int x, int y)
         {
-            if (x >= 0 && x < Size)
-                if (y >= 0 && y < Size)
+            if (x >= 0 && x < ChessConstant.SIZE)
+                if (y >= 0 && y < ChessConstant.SIZE)
                     return true;
 
             return false;

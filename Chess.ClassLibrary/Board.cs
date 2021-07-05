@@ -18,7 +18,7 @@ namespace Chess.ClassLibrary
         /// </summary>
         public Board()
         {
-            Size = 8;
+            Size = ChessConstant.SIZE;
 
             ChessPieceOnPlay = String.Empty;
 
@@ -81,19 +81,19 @@ namespace Chess.ClassLibrary
             //Given the chess piece, figure out the all legal chess moves
             switch (chessPiece)
             {
-                case "K":
+                case ChessConstant.KING:
                     KingMoves(currentCell);
                     break;
 
-                case "Q":
+                case ChessConstant.QUEEN:
                     QueenMoves(currentCell);
                     break;
 
-                case "B":
+                case ChessConstant.BISHOP:
                     BishopMoves(currentCell);
                     break;
 
-                case "R":
+                case ChessConstant.ROOK:
                     RookMoves(currentCell);
                     break;
             }
