@@ -63,9 +63,9 @@ namespace ChessMock
 
         private static Cell SetPiecePosition()
         {
-            // Obtain Chess piece starting File position
-            Console.Write("Enter the chess piece File number [a-h][1-8] : ");
-            //TODO: User input check on length and proper input
+            // Obtain Chess piece starting position as in a1, f4 etc...
+            Console.Write("Enter the chess piece starting position [a-h][1-8] : ");
+            //TODO: User input check on length and proper input not 1a or wrong inputs
             char[] startingPosition = Console.ReadLine().ToCharArray();
 
             int fileLocation = ChessHelper.ChessFileNumber(startingPosition[0].ToString().ToLower()) - 1;
