@@ -33,8 +33,8 @@ namespace Chess.Test
 
             //Result: Expecting the below cell to be marked as a legal move
             Assert.IsTrue(myChess.ChessBoardCell[1, 0].IsLegalMove == true);
-            Assert.IsTrue(myChess.ChessBoardCell[1, 1].IsLegalMove = true);
-            Assert.IsTrue(myChess.ChessBoardCell[0, 1].IsLegalMove = true);
+            Assert.IsTrue(myChess.ChessBoardCell[1, 1].IsLegalMove == true);
+            Assert.IsTrue(myChess.ChessBoardCell[0, 1].IsLegalMove == true);
         }
 
         /// <summary>

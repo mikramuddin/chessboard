@@ -6,7 +6,7 @@ namespace Chess.ClassLibrary
 {
     public class PQueen : Piece
     {
-        private string myVar = "QU";
+        private string myVar = ChessConstant.PQUEEN;
 
         public new string Label
         {

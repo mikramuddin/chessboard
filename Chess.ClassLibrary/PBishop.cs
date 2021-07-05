@@ -6,7 +6,7 @@ namespace Chess.ClassLibrary
 {
     public class PBishop : Piece
     {
-        private string myVar = "BI";
+        private string myVar = ChessConstant.PBISHOP;
 
         public new string Label
         {

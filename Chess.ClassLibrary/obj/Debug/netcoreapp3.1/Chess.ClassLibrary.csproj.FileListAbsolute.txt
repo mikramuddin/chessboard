@@ -15,3 +15,4 @@ C:\Users\User\Desktop\git3\Chess.ClassLibrary\obj\Debug\netcoreapp3.1\Chess.Clas
 C:\Users\User\Desktop\git3\Chess.ClassLibrary\obj\Debug\netcoreapp3.1\Chess.ClassLibrary.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\git3\Chess.ClassLibrary\obj\Debug\netcoreapp3.1\Chess.ClassLibrary.dll
 C:\Users\User\Desktop\git3\Chess.ClassLibrary\obj\Debug\netcoreapp3.1\Chess.ClassLibrary.pdb
+C:\Users\User\Desktop\git3\Chess.ClassLibrary\obj\Debug\netcoreapp3.1\Chess.ClassLibrary.csproj.AssemblyReference.cache

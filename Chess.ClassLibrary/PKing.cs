@@ -6,7 +6,7 @@ namespace Chess.ClassLibrary
 {
     public class PKing : Piece
     {
-        private string myVar = "KG";
+        private string myVar = ChessConstant.PKING;
 
         public new string Label
         {

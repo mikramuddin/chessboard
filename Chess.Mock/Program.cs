@@ -1,5 +1,6 @@
 ﻿using Chess.ClassLibrary;
 using System;
+using System.Collections.Generic;
 
 namespace ChessMock
 {
@@ -10,12 +11,21 @@ namespace ChessMock
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World to Chess Simulation!");
+            string userinput = ChessConstant.KING; //default
 
-            // Obtain Chess piece for the Board to play with
-            Console.WriteLine("Enter the chess piece [K]ing; [Q]ueen; [R]ook; [B]ishop");
-            //TODO: Ensure for only K,Q,R,B as options capturing User error
-            string userinput = Console.ReadLine().ToUpper();
+            Console.WriteLine("Hello World to Chess Simulation!");
+            List<string> gamePieces = new List<string> { "K", "Q", "R", "B" };
+
+            while (true) // Loop for correct user input
+            {
+                // Obtain Chess piece for the Board to play with
+                Console.Write("Enter the chess piece[K]ing;[Q]ueen;[R]ook;[B]ishop: "); 
+                userinput = Console.ReadLine().ToUpper();
+                if (gamePieces.Contains(userinput)) // Check string
+                {
+                    break;
+                }
+            }
 
             do
             {               
@@ -34,7 +44,7 @@ namespace ChessMock
                 if (Console.ReadLine().ToLower().Equals("n"))
                 {
                     // Obtain next Chess piece for the Board to play with
-                    Console.WriteLine("Enter the chess piece [K]ing; [Q]ueen; [R]ook; [B]ishop");
+                    Console.Write("Enter the chess piece[K]ing;[Q]ueen;[R]ook;[B]ishop: ");
                     //TODO: Ensure for only K,Q,R,B as options capturing User error
                     userinput = Console.ReadLine().ToUpper(); 
                 }
@@ -48,15 +58,13 @@ namespace ChessMock
         private static Cell SetPiecePosition()
         {
             // Obtain Chess piece starting File position
-            Console.WriteLine("Enter the chess piece File number [a-h]");
-            string colLabel = Console.ReadLine();
-            //TODO: Ensure for only letters a thru h as options capturing User error
-            int fileLocation = ChessHelper.ChessFileNumber(colLabel.ToLower()) - 1;
+            Console.Write("Enter the chess piece File number [a-h][1-8] : ");
+            //TODO: User input check on length and proper input
+            char[] startingPosition = Console.ReadLine().ToCharArray();
 
-            // Obtain Chess piece starting Rank position
-            Console.WriteLine("and Rank number [1-8]");
-            //TODO: Ensure for only numbers 1 through 8 as options capturing User error
-            int rankLocation = int.Parse(Console.ReadLine()) - 1; 
+            int fileLocation = ChessHelper.ChessFileNumber(startingPosition[0].ToString().ToLower()) - 1;
+
+            int rankLocation = int.Parse(startingPosition[1].ToString()) - 1;
 
             //This position is now occupied by this chess piece
             myChess.ChessBoardCell[rankLocation, fileLocation].IsOccupied = true;
