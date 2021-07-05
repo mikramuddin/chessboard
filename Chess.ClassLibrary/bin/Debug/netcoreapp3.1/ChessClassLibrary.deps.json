@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "ChessClassLibrary/1.0.0": {
+        "runtime": {
+          "ChessClassLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ChessClassLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

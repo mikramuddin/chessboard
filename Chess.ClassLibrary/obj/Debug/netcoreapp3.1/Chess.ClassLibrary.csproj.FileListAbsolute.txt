@@ -1,0 +1,17 @@
+C:\Users\User\Desktop\git2\ChessClassLibrary\bin\Debug\netcoreapp3.1\Chess.ClassLibrary.deps.json
+C:\Users\User\Desktop\git2\ChessClassLibrary\bin\Debug\netcoreapp3.1\Chess.ClassLibrary.dll
+C:\Users\User\Desktop\git2\ChessClassLibrary\bin\Debug\netcoreapp3.1\Chess.ClassLibrary.pdb
+C:\Users\User\Desktop\git2\ChessClassLibrary\obj\Debug\netcoreapp3.1\Chess.ClassLibrary.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\git2\ChessClassLibrary\obj\Debug\netcoreapp3.1\Chess.ClassLibrary.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\git2\ChessClassLibrary\obj\Debug\netcoreapp3.1\Chess.ClassLibrary.AssemblyInfo.cs
+C:\Users\User\Desktop\git2\ChessClassLibrary\obj\Debug\netcoreapp3.1\Chess.ClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\git2\ChessClassLibrary\obj\Debug\netcoreapp3.1\Chess.ClassLibrary.dll
+C:\Users\User\Desktop\git2\ChessClassLibrary\obj\Debug\netcoreapp3.1\Chess.ClassLibrary.pdb
+C:\Users\User\Desktop\git3\Chess.ClassLibrary\bin\Debug\netcoreapp3.1\Chess.ClassLibrary.deps.json
+C:\Users\User\Desktop\git3\Chess.ClassLibrary\bin\Debug\netcoreapp3.1\Chess.ClassLibrary.dll
+C:\Users\User\Desktop\git3\Chess.ClassLibrary\bin\Debug\netcoreapp3.1\Chess.ClassLibrary.pdb
+C:\Users\User\Desktop\git3\Chess.ClassLibrary\obj\Debug\netcoreapp3.1\Chess.ClassLibrary.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\git3\Chess.ClassLibrary\obj\Debug\netcoreapp3.1\Chess.ClassLibrary.AssemblyInfo.cs
+C:\Users\User\Desktop\git3\Chess.ClassLibrary\obj\Debug\netcoreapp3.1\Chess.ClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\git3\Chess.ClassLibrary\obj\Debug\netcoreapp3.1\Chess.ClassLibrary.dll
+C:\Users\User\Desktop\git3\Chess.ClassLibrary\obj\Debug\netcoreapp3.1\Chess.ClassLibrary.pdb

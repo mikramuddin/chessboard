@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "ChessMock/1.0.0": {
+        "dependencies": {
+          "ChessClassLibrary": "1.0.0"
+        },
+        "runtime": {
+          "ChessMock.dll": {}
+        }
+      },
+      "ChessClassLibrary/1.0.0": {
+        "runtime": {
+          "ChessClassLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ChessMock/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ChessClassLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
